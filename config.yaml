@@ -1,0 +1,70 @@
+baseURL: https://briarproject.org/
+languageCode: en-us
+title: Briar
+theme: briar
+enableEmoji: true
+
+blackfriday:
+  noreferrerLinks: true
+
+Params:
+  flatterid: 4pq200
+
+Author:
+  name: The Briar Team
+  # String to hex encoder: http://www.wbwip.com/wbw/emailencoder.html
+  main:
+    - identifier: torsten
+      name: Torsten Grote
+      emaillocal: torsten
+      emaildomain: briarproject.org
+      keyurl: https://grobox.de/gpg/0x74DCA8A36C52F833.asc
+
+    - identifier: michael
+      name: Michael Rogers
+      emaillocal: contact
+      emaildomain: briarproject.org
+      keyurl: /keys/contact.asc
+
+permalinks:
+  #post:  /:section/:year/:month/:title/
+  page: /:slug/
+
+menu:
+  main:
+  - identifier: index
+    name: Home
+    title: Home
+    url: /
+    weight: -110
+
+    main:
+  - identifier: news
+    name: News
+    title: News
+    url: /news/
+    weight: -100
+
+  - identifier: how
+    name: How it works
+    title: How it works
+    url: /how-it-works/
+    weight: -90
+
+  - identifier: about
+    name: About us
+    title: About us
+    url: /about-us/
+    weight: -80
+
+  - identifier: involved
+    name: Get Involved
+    title: Get Involved
+    url: /get-involved/
+    weight: -70
+
+  - identifier: download
+    name: Download
+    title: Download
+    url: /download/
+    weight: -60

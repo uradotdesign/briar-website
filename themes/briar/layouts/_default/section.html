@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <h1>{{ with .Title }} {{ . }} {{ else }} {{ .Site.Title }} {{ end }}</h1>
+  {{ .Content }}
+  {{ range .Pages.ByDate.Reverse }}
+    {{ if not .Params.hide }}
+      <h3 itemprop="headline">
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </h3>
+    {{ end }}
+  {{ end }}
+{{ end }}

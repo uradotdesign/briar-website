@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h2>{{ with .Title }} {{ . }} {{ else }} {{ .Site.Title }} {{ end }}</h2>
+<p><strong>Latest Release:</strong> Briar {{ .Params.releaseVersion }} ({{ .Params.releaseDate }})</p>
+<p><strong>Latest News:</strong>
+{{ range first 1 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+ <a href="{{.Permalink}}">{{.Title}}</a>
+</p>
+{{ end }}
+{{ .Content }}
+{{ end }}

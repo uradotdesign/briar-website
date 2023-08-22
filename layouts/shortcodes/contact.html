@@ -1,0 +1,9 @@
+<h3 id="contact">Contact</h3>
+{{ range .Site.Author.main }}
+<p>
+{{ .name }} <<a
+href="mailto:{{ .emaillocal }}&#64;{{ .emaildomain }}"
+>{{ .emaillocal }}&#64;{{ .emaildomain }}</a>>
+[<a href="{{ .keyurl }}">PGP key</a>]
+</p>
+{{ end }}

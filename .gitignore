@@ -1,0 +1,5 @@
+*.orig
+public/
+resources/
+*.swp
+.idea

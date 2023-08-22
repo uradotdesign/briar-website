@@ -1,0 +1,25 @@
+<div id="header_container">
+  <div id="header">
+    <a href="/">
+      <div id="logo"><img src="/img/briar-logo-header.svg" alt="Briar" class="logo" /></div>
+    </a>
+    <div id="nav">
+      <div id="menu-toggle">
+        <label for="menu-toggle"><img src="/img/menu.png" alt="Drop-down menu"></label>
+        <input type="checkbox" id="menu-toggle" />
+      </div>
+      <ul id="menu">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ $menu_item_url := .URL | relLangURL }}
+        {{ $page_url := $currentPage.RelPermalink | relLangURL }}
+        {{ if ne $menu_item_url $page_url }} <!-- Check if the URLs are not equal -->
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </div> <!-- nav -->
+  </div> <!-- header -->
+</div> <!-- header_container -->
