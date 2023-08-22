@@ -38,7 +38,6 @@ menu:
     url: /
     weight: -110
 
-    main:
   - identifier: news
     name: News
     title: News
