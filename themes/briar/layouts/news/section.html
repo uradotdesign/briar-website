@@ -1,24 +1,27 @@
 {{ define "main" }}
-  <h1>{{ with .Title }} {{ . }} {{ else }} {{ .Site.Title }} {{ end }} <a href="/news/index.xml"> <img src="/img/rss-icon.png" class="rss-icon"/></a> </h1>
-  {{ .Content }}
-  {{ range .Pages.ByDate.Reverse }}
-    {{ if not .Params.hide }}
-      <h3 itemprop="headline" class="blog-post-title">
-        <a href="{{.Permalink}}">{{.Title}}</a>
-      </h3>
-      <p class="blog-post-meta">
-        {{.Date.Format "January 2, 2006"}} by
-        {{ if (isset .Params "author") }}
-          {{ markdownify .Params.author }}
-        {{ else }}
-          {{ .Site.Author.name }}
-        {{ end }}
-      </p>
-      <div>
-        {{ .Summary | safeHTML |  truncate 250 }}
-        <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
-      </div>
-      <hr/>
+<h2>News</h1>
+{{ .Content }}
+{{ range .Pages.ByDate.Reverse }}
+{{ if not .Params.hide }}
+<div class="news-article">
+  <p class="blog-post-meta">
+    {{.Date.Format "January 2, 2006"}} by
+    {{ if (isset .Params "author") }}
+    {{ markdownify .Params.author }}
+    {{ else }}
+    {{ .Site.Author.name }}
     {{ end }}
-  {{ end }}
+  </p>
+  <h3 itemprop="headline" class="blog-post-title">
+    <a href="{{.Permalink}}">{{.Title}}</a>
+  </h3>
+  <div class="description">
+    {{ .Summary | safeHTML | truncate 250 }}
+    <a href='{{ .Permalink }}'>
+      <nobr>Read more →</nobr>
+    </a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
 {{ end }}
