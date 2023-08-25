@@ -1,12 +1,48 @@
 {{ define "main" }}
-<h2>{{ .Title }}</h2>
-<p>
-    {{.Date.Format "January 2, 2006"}} by
-    {{ if (isset .Params "author") }}
+<div style="display: flex; align-items: flex-start; justify-content: space-between; width: 100%;">
+  <div id="content-news">
+    <h2>{{ .Title }}</h2>
+    <p>
+      {{.Date.Format "January 2, 2006"}} by
+      {{ if (isset .Params "author") }}
       {{ markdownify .Params.author }}
-    {{ else }}
+      {{ else }}
       {{ .Site.Author.name }}
+      {{ end }}
+    </p>
+    <div class="content-container">
+      {{ .Content }}
+    </div>
+    {{ if (or .NextInSection .PrevInSection) }}
+    <div id="section-navigation">
+      {{ if .NextInSection }}
+      <a href="{{ .NextInSection.Permalink }}">
+        <h4>Previous</h4>
+      </a>
+      {{ else }}
+        <a class="disabled" disabled>
+          <h4>Previous</h4>
+        </a>
     {{ end }}
-</p>
-{{ .Content }}
+    {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}">
+        <h4>Next</h4>
+      </a>
+    {{ else }}
+    <a class="disabled" disabled>
+      <h4>Next</h4>
+    </a>
+    {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  <div id="sidebar">
+    <h4>Read also</h4>
+    {{ range first 8 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+    <a href="{{.Permalink}}">
+      <li>{{ .Title }}</li>
+    </a>
+    {{ end }}
+  </div>
+</div>
 {{ end }}

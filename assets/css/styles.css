@@ -38,6 +38,7 @@ body {
 
 html {
     font-family: 'Sinkin Sans 400', 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #wrapper,
@@ -110,6 +111,108 @@ html {
 
 #content {
     width: 100%;
+}
+
+#content-news {
+    flex: 75;
+    max-width: calc(75% - 20px);
+    margin: 40px 0 0 0;
+    margin-right: 20px;
+}
+
+#content-news h2:first-child {
+    margin-top: 0;
+    padding: 10px;
+    background-color: var(--cool-gray-700);
+    color: white;
+    border-radius: 8px;
+}
+
+#content-news h3 {
+    color: var(--cool-gray-700);
+}
+
+#content-news p {
+    color: var(--cool-gray-600);
+}
+
+#content-news img {
+    max-width: 100%;
+}
+
+#section-navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 40px 0 80px 0;
+}
+
+#section-navigation a {
+    display: inline-block;
+    text-decoration: none;
+    flex: 50%;
+    padding: 20px;
+    box-shadow: 0 0 2px 0 var(--cool-gray-500);
+    border-radius: 8px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .3s ease;
+    color: var(--cool-gray-500);
+    font-family: 'Sinkin Sans 300';
+}
+
+#section-navigation a:hover {
+    box-shadow: 0 0 2px 0 var(--cool-gray-900);
+    color: var(--cool-gray-900);
+}
+
+#section-navigation a.disabled:hover {
+    box-shadow: 0 0 2px 0 var(--cool-gray-500);
+    color: var(--cool-gray-500);
+}
+
+#section-navigation a:first-child h4{
+    text-align: left;
+}
+
+#section-navigation a:last-child h4{
+    text-align: right;
+}
+
+#sidebar {
+    flex: 25;
+    margin: 40px 0 0 0;
+    border-left: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+}
+
+#sidebar h4 {
+    color: var(--cool-gray-700);
+    font-family: 'Sinkin Sans 300';
+    padding-left: 20px;
+    margin: 12px 0;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: var(--cool-gray-500);
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Sinkin Sans 300';
+    padding: 4px 0 4px 20px;
+    transition: all .3s ease;
+}
+
+#sidebar a:hover {
+    color: var(--cool-gray-900);
+    box-shadow: -1px 0 0 var(--cool-gray-900);
+}
+
+#sidebar a li {
+    list-style-type: none;
 }
 
 #container-bg {
