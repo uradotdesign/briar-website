@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{- partial "head.html" . -}}
-<body>
- <div id="wrapper">
-  {{- partial "header.html" . -}}
-  <div id="container">
-    <div id="content">
-      {{- block "main" . }}{{- end }}
+  {{ partial "head.html" . }}
+  <body {{ if .IsHome }} style="background-color: transparent" {{ else }} style="background-color: var(--gray-50)" {{ end }}>
+    <div id="wrapper">
+      {{ partial "header.html" . }}
+      <div id="container">
+        <div {{ if or (.IsHome) (eq .Page.Section "news") }} id="content" {{ else }} id="content-smaller" {{ end }}>{{- block "main" . }}{{- end }}</div>
+      </div> 
     </div>
-   </div>
-  </div>
-   {{- partial "footer.html" . -}}
+    {{ partial "footer.html" . }}
   </body>
 </html>

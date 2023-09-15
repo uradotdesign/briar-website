@@ -2,8 +2,10 @@
 aliases:
 - /about.html
 - /about
-title: About Us
+title: About
 ---
+
+#### Core Team
 
 **Michael Rogers** started the Briar project to support freedom of
 expression, freedom of association and the right to privacy. He has

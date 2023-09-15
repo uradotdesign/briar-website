@@ -1,23 +1,19 @@
 <head>
   <meta charset="utf-8" />
-  {{ hugo.Generator }}
-  {{ with resources.Get "css/styles.css" | minify }}
-  <style media="screen">{{ .Content | safeCSS }}</style>
-  {{ end }}
+  {{ $css := resources.Get "css/styles.css"}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"/>
+  {{ $fonts := resources.Get "css/fonts.css"}}
+  <link rel="stylesheet" href="{{ $fonts.RelPermalink }}"/>
   <title>{{ with .Title }} {{ . }} - {{ end }} {{ .Site.Title }}</title>
-  <meta name="description"
-        lang="{{ $.Site.LanguageCode | default "en" }}"
-        content="{{ with .Param "description" }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="flattr:id"
-        content="{{ with .Param "flatterid" }}{{ . }}{{ end }}">
-  <link rel="icon" type="image/x-icon" href="/img/briar_logo_white.ico">
-  <link rel="icon" type="image/png" href="/img/briar_logo_circle.png">
+  <meta name="description" lang="{{ $.Site.LanguageCode | default "en" }}" content="{{ with .Param "description" }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="flattr:id" content="{{ with .Param "flatterid" }}{{ . }}{{ end }}">
+  <link rel="icon" type="image/x-icon" href="/img/briar_logo_white.ico" />
+  <link rel="icon" type="image/png" href="/img/briar_logo_circle.png" />
 
   <link href="/news/index.xml" rel="alternate" type="application/rss+xml" title="Briar News" />
   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Briar - All changes" />
   {{ if .OutputFormats.Get "RSS" }}
-  <link rel="alternate" type="application/rss+xml" title="{{ with .Title }}{{ . }} - {{ end }} {{ .Site.Title }}"
-    href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
+  <link rel="alternate" type="application/rss+xml" title="{{ with .Title }}{{ . }} - {{ end }} {{ .Site.Title }}" href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
   {{ end }}
 </head>

@@ -32,38 +32,38 @@ permalinks:
 
 menu:
   main:
-  - identifier: index
-    name: Home
-    title: Home
-    url: /
-    weight: -110
+    - identifier: index
+      name: Home
+      title: Home
+      url: /
+      weight: -110
 
-  - identifier: news
-    name: News
-    title: News
-    url: /news/
-    weight: -100
+    - identifier: news
+      name: News
+      title: News
+      url: /news/
+      weight: -100
 
-  - identifier: how
-    name: How it works
-    title: How it works
-    url: /how-it-works/
-    weight: -90
+    - identifier: how
+      name: How it works
+      title: How it works
+      url: /how-it-works/
+      weight: -90
 
-  - identifier: about
-    name: About us
-    title: About us
-    url: /about-us/
-    weight: -80
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: -80
 
-  - identifier: involved
-    name: Get Involved
-    title: Get Involved
-    url: /get-involved/
-    weight: -70
+    - identifier: involved
+      name: Get Involved
+      title: Get Involved
+      url: /get-involved/
+      weight: -70
 
-  - identifier: download
-    name: Download
-    title: Download
-    url: /download/
-    weight: -60
+    - identifier: download
+      name: Download
+      title: Download
+      url: /download/
+      weight: -60

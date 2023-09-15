@@ -9,17 +9,26 @@
         <input type="checkbox" id="menu-toggle" />
       </div>
       <ul id="menu">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        {{ $menu_item_url := .URL | relLangURL }}
-        {{ $page_url := $currentPage.RelPermalink | relLangURL }}
-        {{ if ne $menu_item_url $page_url }} <!-- Check if the URLs are not equal -->
+        {{ range $index, $item := .Site.Menus.main }}
+    {{ if ne $index 0 }}
         <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
+          <a href="{{ .URL }}">{{ $item.Name }}</a>
         </li>
         {{ end }}
         {{ end }}
       </ul>
+      <div class="menu-mobile">
+        <img src="/img/bars-solid.svg" height="28px" alt="" id="hamburger-menu">
+        <div class="mobile-overlay">
+          <ul id="menu">
+            {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
     </div> <!-- nav -->
   </div> <!-- header -->
 </div> <!-- header_container -->

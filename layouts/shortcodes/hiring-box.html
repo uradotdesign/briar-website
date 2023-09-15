@@ -1,9 +1,0 @@
-<div class="hiring-container">
-  <h3>We are hiring!</h3>
-  {{ range first 1 (where .Site.RegularPages "Section" "hiring").ByDate.Reverse }}
-  <a href="{{.Permalink}}" class="hiring">
-    <p>{{ .Date.Format "January 2, 2006" }}</p>
-    <h4>{{ .Title }}</h4>
-  </a>
-</div>
-{{ end }}

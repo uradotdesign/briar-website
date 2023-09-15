@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>News</h1>
+{{ .Content }} {{ range .Pages.ByDate.Reverse }} {{ if not .Params.hide }}
+<article class="news-article">
+  <div class="blog-post-meta"><time style="font-family: 'Inter 500';:font-size: 0.875rem;text-transform: uppercase;" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "January 2, 2006"}}</time></div>
+  <h1 itemprop="headline" class="blog-post-title">
+    <a href="{{.RelPermalink}}">{{.Title}}</a>
+  </h1>
+  <div class="description">
+    {{ .Summary | safeHTML | truncate 250 }}
+    <a href="{{ .RelPermalink }}">
+      <nobr>Read more →</nobr>
+    </a>
+  </div>
+</article>
+{{ end }} {{ end }} {{ end }}

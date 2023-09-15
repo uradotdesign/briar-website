@@ -1,36 +1,33 @@
 {{ define "main" }}
-<div style="display: flex; align-items: flex-start; justify-content: space-between; width: 100%;">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; width: 90%; align-self: flex-start; margin-top: 40px;">
   <div id="content-news">
-    <h2>{{ .Title }}</h2>
-    <p>
-      {{.Date.Format "January 2, 2006"}} by
-      {{ if (isset .Params "author") }}
-      {{ markdownify .Params.author }}
-      {{ else }}
-      {{ .Site.Author.name }}
-      {{ end }}
-    </p>
-    <div class="content-container">
-      {{ .Content }}
+    <div class="content-box">
+      <p class="date-author">
+        <span style="font-weight:500">{{.Date.Format "January 2, 2006"}}</span>
+      </p>
+      <h1>{{ .Title }}</h1>
+      <div class="content-container">
+        {{ .Content }}
+      </div>
     </div>
     {{ if (or .NextInSection .PrevInSection) }}
     <div id="section-navigation">
       {{ if .NextInSection }}
-      <a href="{{ .NextInSection.Permalink }}">
-        <h4>Previous</h4>
+      <a class="prev" href="{{ .NextInSection.RelPermalink }}">
+        <h4>← Previous</h4>
       </a>
       {{ else }}
         <a class="disabled" disabled>
-          <h4>Previous</h4>
+          <h4>← Previous</h4>
         </a>
     {{ end }}
     {{ if .PrevInSection }}
-      <a href="{{ .PrevInSection.Permalink }}">
-        <h4>Next</h4>
+      <a class="next" href="{{ .PrevInSection.RelPermalink }}">
+        <h4>Next →</h4>
       </a>
     {{ else }}
     <a class="disabled" disabled>
-      <h4>Next</h4>
+      <h4>Next →</h4>
     </a>
     {{ end }}
     </div>
@@ -39,10 +36,11 @@
   <div id="sidebar">
     <h4>Read also</h4>
     {{ range first 8 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
-    <a href="{{.Permalink}}">
+    <a href="{{.RelPermalink}}">
       <li>{{ .Title }}</li>
     </a>
     {{ end }}
   </div>
 </div>
+<div class="divider"></div>
 {{ end }}

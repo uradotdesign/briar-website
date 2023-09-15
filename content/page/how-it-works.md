@@ -18,24 +18,19 @@ Mailbox](/mailbox) to deliver their messages securely.
 
 The [quick start guide](https://briarproject.org/quick-start) and
 the [manual](https://briarproject.org/manual) describe how to use Briar
-and the features that are available.
-
-Technical details are available on
+and the features that are available. Technical details are available on
 the [wiki](https://code.briarproject.org/briar/briar/wikis)
 and explained in this [video](https://www.youtube.com/watch?v=sKuljekMzTc).
 
-{{< figure src="/img/diagram_secure.png" link="/img/diagram_secure.png"
-class="fullwidth" alt="Briar"
+{{< figure src="/img/howitworks1.svg" link="/img/howitworks1.svg" alt="Briar"
 caption="Briar uses direct, encrypted connections between users to prevent surveillance and censorship."
 >}}
 
-{{< figure src="/img/diagram_insecure.png" link="/img/diagram_insecure.png"
-class="fullwidth" alt="Typical messaging software"
+{{< figure src="/img/howitworks2.svg" link="/img/howitworks2.svg" alt="Typical messaging software"
 caption="Typical messaging software relies on central servers and exposes messages and relationships to surveillance."
 >}}
 
-{{< figure src="/img/diagram_sharing.png" link="/img/diagram_sharing.png"
-class="fullwidth"
+{{< figure class="bigger-width" src="/img/howitworks3.svg" link="/img/howitworks3.svg"
 alt="Sharing data with Briar via Wi-Fi, Bluetooth and Internet"
 caption="Briar can share data via Wi-Fi, Bluetooth and the Internet."
 >}}

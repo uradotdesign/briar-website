@@ -1,7 +1,7 @@
 <div class="latest-news">
     {{ range first 1 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+    <p>{{ .Date.Format "January 2, 2006" }} </p>
     <a href="{{.Permalink}}">
-        <p>{{ .Date.Format "January 2, 2006" }} </p>
         <h2>{{ .Title }}</h2>
     </a>
 </div>
