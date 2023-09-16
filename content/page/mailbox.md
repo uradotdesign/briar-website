@@ -17,8 +17,6 @@ device connected to power and Wi-Fi.
 
 {{< googleplay url="https://play.google.com/store/apps/details?id=org.briarproject.mailbox" >}}
 
-{{< fdroid  url="/fdroid" >}}
-
 If you prefer not to use Google Play, you can [install the app via
 F-Droid](/fdroid) or [download the APK file](/apk) directly from
 our site.

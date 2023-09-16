@@ -65,5 +65,5 @@ menu:
     - identifier: download
       name: Download
       title: Download
-      url: /download/
+      url: /download-briar/
       weight: -60

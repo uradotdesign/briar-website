@@ -13,21 +13,9 @@ fixed a lot of bugs and made many improvements thanks to your feedback.
 
 {{< googleplay url="https://play.google.com/store/apps/details?id=org.briarproject.briar.android" >}}
 
-{{< fdroid  url="/fdroid" >}}
-
 If you prefer not to use Google Play, you can [install the app via
 F-Droid](/fdroid) or [download the APK file](/apk) directly from
 our site.
-
-### Screenshots
-
-{{< screenshots
-    "briar-1.png"
-    "briar-2.png"
-    "briar-3.png"
-    "briar-4.png"
-    "briar-5.png"
-    >}}
 
 ### Further information
 
