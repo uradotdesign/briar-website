@@ -5,7 +5,7 @@ aliases:
 title: About
 ---
 
-#### Core Team
+## Core Team
 
 **Michael Rogers** started the Briar project to support freedom of
 expression, freedom of association and the right to privacy. He has
@@ -35,7 +35,7 @@ security and privacy. He's contributing to Briar in his spare time.
 
 **Nico Alt** started the development of Briar Desktop to bring Briar to non-Android platforms. Having been an F-Droid developer for a long time, he sincerely wishes free alternatives to Android to succeed and is mainly interested in free software to empower people.
 
-#### Past Contributors
+## Past Contributors
 
 **Benedikt Wieder** has contributed to a variety of open source projects
 ranging from artistic tools to security applications. During his
@@ -59,14 +59,14 @@ researcher. He is interested in privacy and applying user-centred design
 to usable security. He is a long-time supporter of the Open Rights
 Group, Tor and free software projects.
 
-#### Governance
+## Governance
 
 The project is governed by a voluntary [board](/governance). All contributors must adhere to the [code of conduct](/code-of-conduct).
 
-#### Funding
+## Funding
 
 {{% funding %}}
 
-#### Contact
+## Contact
 
 To contact the team, please email {{<contactemail>}}.

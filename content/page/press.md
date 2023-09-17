@@ -3,14 +3,14 @@ description: Briar press links and videos
 title: Press
 ---
 
-### Announcements and press releases
+## Announcements and press releases
 
 The general purpose announcements that we publish are available on the [news page](https://briarproject.org/news/) and [briar-announce mailing list](https://sourceforge.net/projects/briar/lists/briar-announce).
 
 If you have a press inquiry, write to us at {{<contactemail>}}.
 You can also send press articles about Briar to this address, so we can add them to this page.
 
-### Media appearances
+## Media appearances
 
 Briar is occasionally mentioned in the press. This list is not comprehensive, but illustrates some articles that have been published about Briar.
 
@@ -81,7 +81,7 @@ Briar is occasionally mentioned in the press. This list is not comprehensive, bu
 | 2014-05-19 | Wired | [Out in the Open: Take Back Your Privacy With This Open Source WhatsApp](https://www.wired.com/2014/05/briar/) |
 
 
-### Videos and Talks
+## Videos and Talks
 - 2022-08-22: [P2P Messaging with Briar](https://www.dailymotion.com/video/x8d7gcb)
 - 2022-03-05: [How to keep communicating with no internet using Briar](https://www.youtube.com/watch?v=AzJrd0Doz0M)
 - 2022-03-01: [Application bu am solo lool ci Android | Message sans Internet | Wolof](https://www.youtube.com/watch?v=Z71PPmOkI5A)

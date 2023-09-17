@@ -25,7 +25,7 @@ ensure that no other issues remain undiscovered.
 For those who are interested in the details, a description of each issue is
 given below. The researchers' report can be found [here](https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf).
 
-### Issue 1: Receiving invalid message would have caused app to exit
+## Issue 1: Receiving invalid message would have caused app to exit
 
 The first issue (fixed in Briar 1.4.22) would have allowed a malicious user to
 prevent their contacts from using Briar by repeatedly sending them invalid
@@ -39,7 +39,7 @@ There was no risk of memory corruption, as the length check took place in
 memory-safe Java code. Invalid messages were not stored or forwarded to other
 users.
 
-### Issue 2: Message duplication in blogs, forums and private groups
+## Issue 2: Message duplication in blogs, forums and private groups
 
 The second issue (fixed in Briar 1.4.22) would have allowed a malicious user
 to create duplicates of messages written by other users in blogs, forums and
@@ -89,7 +89,7 @@ Fortunately, genuine messages in blogs, forums and private groups have always
 been created in canonical form, so the issue was solved by rejecting any
 messages that were not in canonical form.
 
-### Issue 3: Poorly designed cryptographic handshake
+## Issue 3: Poorly designed cryptographic handshake
 
 The third issue (fixed in Briar 1.5.3) involved a poorly designed
 cryptographic handshake. At first it appeared that design flaws in this
@@ -132,7 +132,7 @@ Briar 1.5.3 replaces the insecure handshake with a more secure version, and we
 have requested an independent security audit of the whole protocol stack to
 ensure that no other mistakes of this kind were made.
 
-### About Briar
+## About Briar
 
 Briar is a messaging app designed for activists, journalists, and anyone else
 who needs a safe, easy and robust way to communicate. Unlike traditional

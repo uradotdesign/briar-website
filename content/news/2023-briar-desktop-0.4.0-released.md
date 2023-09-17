@@ -5,7 +5,7 @@ date: 2023-01-31T12:00:00+00:00
 title: 'Briar Desktop 0.4.0-beta released - Windows support and forums'
 ---
 
-### Briar Desktop 0.4.0-beta for Linux and Windows including the first new feature: *forums*
+## Briar Desktop 0.4.0-beta for Linux and Windows including the first new feature: *forums*
 
 We are very happy to announce that we have accomplished two big goals! We just released a version of Briar Desktop for Windows so that roughly [one year](https://code.briarproject.org/briar/briar-desktop/-/wikis/Changelog) after our first version, we now support another major operating system in addition to Linux. With the beta release 0.4.0 you can now try out Briar Desktop on your Windows machines with the operating systems Windows 10 and 11.
 

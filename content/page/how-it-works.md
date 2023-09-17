@@ -30,10 +30,8 @@ caption="Briar uses direct, encrypted connections between users to prevent surve
 caption="Typical messaging software relies on central servers and exposes messages and relationships to surveillance."
 >}}
 
-{{< figure class="bigger-width" src="/img/howitworks3.svg" link="/img/howitworks3.svg"
-alt="Sharing data with Briar via Wi-Fi, Bluetooth and Internet"
-caption="Briar can share data via Wi-Fi, Bluetooth and the Internet."
->}}
+{{< howitworks url="https://play.google.com/store/apps/details?id=org.briarproject.briar.android" >}}
+
 
 Briar provides private messaging, public forums and blogs that are
 protected against the following surveillance and censorship threats:

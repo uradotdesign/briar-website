@@ -21,7 +21,7 @@ If you prefer not to use Google Play, you can [install the app via
 F-Droid](/fdroid) or [download the APK file](/apk) directly from
 our site.
 
-### Screenshots
+## Screenshots
 
 {{< screenshots
     "mailbox-1.png"
@@ -32,7 +32,7 @@ our site.
     "mailbox-6.png"
     >}}
 
-### Further information
+## Further information
 
 If you'd like to be informed about future releases of our apps, please [join
 the announcement mailing

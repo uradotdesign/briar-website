@@ -47,7 +47,7 @@ users will not be able to migrate their accounts to the final version.
 For security reasons, their **accounts and data will expire** with the
 beta.
 
-### Media
+## Media
 
 <div id="screenshots">
   <a href="/raw/screenshots/00_password.png">
@@ -68,7 +68,7 @@ beta.
 
 <img src="/img/architecture-simple.png" style="width:100%;">
 
-### About Briar
+## About Briar
 
 Briar is a messaging app designed for activists, journalists, and anyone
 else who needs a safe, easy and robust way to communicate. Unlike

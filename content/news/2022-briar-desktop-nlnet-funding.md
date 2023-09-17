@@ -5,7 +5,7 @@ date: 2022-12-05T12:00:00+00:00
 title: 'Briar Desktop got another round of funding'
 ---
 
-### Briar Desktop got another round of funding
+## Briar Desktop got another round of funding
 
 So far, Briar is only available as an Android app, which is preventing some organizations that work in repressive environments from using it as a secure communications tool and considering it as a more secure alternative to email. To remedy that, we have started working on a desktop app in September 2021 that is supposed to work on three major operating systems: Linux, macOS and Windows. We already released a beta version for Linux, including private chats in January 2022.
 

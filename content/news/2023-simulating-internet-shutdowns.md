@@ -5,7 +5,7 @@ date: 2023-05-04T11:00:00+00:00
 title: "Researching Android's behavior during Internet shutdowns"
 ---
 
-### Background
+## Background
 
 The Briar team is currently doing some research into the long-term
 evolution of the project.
@@ -20,7 +20,7 @@ for improving Briar's messaging capabilities, especially in situations
 where Internet access is unavailable, such as during an
 Internet shutdown.
 
-### Simulated Internet shutdowns
+## Simulated Internet shutdowns
 
 One aspect of our public mesh research is looking into how Android devices
 behave in case of an Internet shutdown.
@@ -48,7 +48,7 @@ This is good news for apps like Briar that are designed to operate during
 Internet shutdowns, making use of whatever network connectivity is
 available.
 
-#### Experiment setup
+### Experiment setup
 
 The basic setup for our experiments was a Linux-based Wi-Fi router that was
 configured in different ways to simulate an Internet shutdown.
@@ -75,7 +75,7 @@ domain name and created four distinct situations:
 A combination of `dnsmasq`, `nginx` and `iptables` was used to set up
 these situations.
 
-#### 1. Fake captive portal
+### 1. Fake captive portal
 
 If you've used an Android phone on a public Wi-Fi network,
 you're probably familiar with the basic situation created
@@ -101,7 +101,7 @@ We used the Chrome browser to check network access to other websites.
 Even though the browser showed a black bar at the top saying
 "No Internet connection", we were able to browse random sites just fine.
 
-#### 2. Manipulating DNS responses for some of Google's domains
+### 2. Manipulating DNS responses for some of Google's domains
 
 Setup 2) was different from the first one in that Android was unable to
 connect to `connectivitycheck.gstatic.com/generate_204` and receive any HTTP
@@ -136,7 +136,7 @@ As in the first setup, we used Chrome to check random websites. Except
 for Google, which was really blocked in this setup, we had no problems
 browsing the web.
 
-#### Summary
+### Summary
 
 When an Android device thinks that its Internet
 connection doesn't work, either due to a captive portal or due to certain
@@ -154,12 +154,12 @@ While other mechanisms could still influence the ability to form mesh
 networks, the Android operating system itself doesn't seem to get in our
 way.
 
-### Thanks
+## Thanks
 
 This experiment was part of ongoing research funded by
 [eQualitie](https://equalit.ie/).
 
-### About Briar
+## About Briar
 
 Briar is a messaging app designed for activists, journalists,
 and anyone else who needs a safe, easy and robust way to communicate.

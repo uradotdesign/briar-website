@@ -1,4 +1,5 @@
 ---
+layout: single
 aliases:
 - /hiring.html
 title: Jobs

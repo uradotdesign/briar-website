@@ -4,11 +4,11 @@ aliases:
 title: Governance
 ---
 
-### Basics
+## Basics
 
 An annually self-appointed board of no more than 5 members determines policies and implements them.
 
-### Participants
+## Participants
 
 The board's policies determine the criteria for community membership.
 
@@ -18,7 +18,7 @@ Each year current board members elect the board members for the subsequent year.
 
 Board members can serve an unlimited number of 1-year terms.
 
-### Policy
+## Policy
 
 The board is expected to operate according to this Rule and the explicit agreements it has created.
 
@@ -28,11 +28,11 @@ Board members or their designees are responsible for implementing agreements, an
 
 Community participants unhappy with the board's implementation with the agreements may voice their concerns to individual board members or in the community at large.
 
-### Evolution
+## Evolution
 
 Changes to this Rule require 2/3 approval of the board.
 
-### Current Board Members
+## Current Board Members
 
 As of 25 April 2023, the board members are Nico Alt, Julian Dehm, Torsten Grote and Michael Rogers.
 

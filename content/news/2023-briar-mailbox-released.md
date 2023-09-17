@@ -4,7 +4,7 @@ date: 2023-06-15T11:00:00+00:00
 title: 'Briar Mailbox released to improve connectivity'
 ---
 
-### Press release
+## Press release
 
 The Briar Project released a new Android app called Briar Mailbox today.
 
@@ -23,7 +23,7 @@ device connected to power and Wi-Fi.
 The development of Briar Mailbox was supported by
 [eQualit.ie](https://equalit.ie/).
 
-### Private by design
+## Private by design
 
 Messaging apps typically use a central server to deliver everyone's messages,
 so the server can see which users are communicating with each other. Some
@@ -37,7 +37,7 @@ you need. Each Mailbox only delivers messages between its owner and their
 contacts, so no information is exposed to third parties. All connections are
 made via the Tor network to further protect against surveillance.
 
-### Media
+## Media
 
 {{< screenshots
     "mailbox-1.png"
@@ -48,7 +48,7 @@ made via the Tor network to further protect against surveillance.
     "mailbox-6.png"
     >}}
     
-### About Briar
+## About Briar
 
 Briar is a messaging app designed for activists, journalists, and anyone else
 who needs a safe, easy and robust way to communicate.

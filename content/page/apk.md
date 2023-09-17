@@ -13,7 +13,7 @@ You can usually find this information in the **About phone** section of the
 **Settings** app.
 
 
-### Android 8 or later (most users)
+## Android 8 or later (most users)
 
 If your phone uses Android 8 or later, follow these steps to download Briar
 or Briar Mailbox:
@@ -42,7 +42,7 @@ open the permission screen.
 6\) If installation doesn't continue automatically, tap the back button to
 continue installing the app.
 
-### Android 7.1.1 or earlier
+## Android 7.1.1 or earlier
 
 If your phone uses Android 7.1.1 or earlier, follow these steps to download
 Briar or Briar Mailbox:
