@@ -623,7 +623,7 @@ figure img {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 32px;
 }
 
@@ -769,6 +769,21 @@ figure img {
     font-family: 'Inter 400';
 }
 
+#screenshots {
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+#screenshots a {
+    display: inline-block;
+    width: 30%;
+    min-width: 30%;
+}
+
 .description a {
     display: block;
     width: min-content;
@@ -846,6 +861,11 @@ figure img {
     margin-bottom: 0;
 }
 
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
 td {
     font-family: 'Inter 400';
     font-size: 0.875rem;
@@ -886,6 +906,27 @@ figure.mobile-photo {
     margin-top: 40px;
 }
 
+.newsletter {
+    margin-top: 32px;
+}
+
+#newsletter {
+    padding: 8px 16px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid var(--gray-300);
+    text-decoration: none;
+    font-family: 'Sinkin Sans 400';
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    transition: all 0.3s ease;
+    background-color: var(--gray-100);
+}
+
+#newsletter:hover {
+    background-color: var(--gray-200);
+}
+
 @media only screen and (min-width: 1440px) {
     #container-bg {
         left: calc(-1*((100vw - (1232px))/2));
@@ -913,6 +954,11 @@ figure.mobile-photo {
 
     .news-article {
         width: calc(100% - 80px);
+    }
+
+    #screenshots a {
+        width: 50%;
+        min-width: 50%;
     }
 }
 
@@ -988,7 +1034,7 @@ figure.mobile-photo {
     }
 
     .download-links img {
-        width: 49%;
+        width: 178px;
     }
 
     #nav {
@@ -1092,6 +1138,11 @@ figure.mobile-photo {
         max-width: 93vw;
     }
 
+    #screenshots a {
+        width: 60%;
+        min-width: 60%;
+    }
+
     .mobile-overlay {
         width: calc(93vw - 140px);
         transform: translateX(-140px);
@@ -1178,6 +1229,11 @@ figure.mobile-photo {
         margin-top: 40px;
     }
 
+    #screenshots a {
+        width: 80%;
+        min-width: 80%;
+    }
+
     #logo img {
         width: 100%;
     }
@@ -1194,6 +1250,10 @@ figure.mobile-photo {
         text-align: left !important;
         margin-top: 12px !important;
         margin-bottom: 0 !important;
+    }
+
+    .download-links img {
+        width: 100%;
     }
 
     figure.desktop-photo {

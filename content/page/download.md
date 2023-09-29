@@ -11,7 +11,7 @@ Briar for Android is available for download from Google Play and F-Droid.
 Thank you to everyone who has tested Briar and sent feedback! We've
 fixed a lot of bugs and made many improvements thanks to your feedback.
 
-{{< googleplay url="https://play.google.com/store/apps/details?id=org.briarproject.briar.android" >}}
+{{< googleplay url_1="https://play.google.com/store/apps/details?id=org.briarproject.briar.android" url_2="/fdroid"  >}}
 
 If you prefer not to use Google Play, you can [install the app via
 F-Droid](/fdroid) or [download the APK file](/apk) directly from
